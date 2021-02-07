@@ -10,4 +10,5 @@ op.add_argument("--disable-dev-sh-usage")
 driver = webdriver.Chrome(executable_path = os.environ.get("CROMEDRIVER_PATH"), chrome_options=op)
 
 driver.get("https://www.google.com")
+driver.save_screenshot('screenie.png')
 print(driver.page_source)
